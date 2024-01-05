@@ -1,0 +1,13 @@
+@import "../../vars.css";
+.title {
+  color: var(--color-primary);
+}
+.badge {
+  background-color: var(--color-primary);
+  font-family: var(--font-roboto);
+}
+.cardTitle,
+.cardDesc {
+  font-family: var(--font-roboto);
+  text-align: justify;
+}

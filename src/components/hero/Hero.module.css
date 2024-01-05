@@ -1,0 +1,47 @@
+@import "../../vars.css";
+
+.heroContainer {
+  height: 100vh;
+}
+.name {
+  font-size: 72px;
+}
+.descText {
+  text-align: justify;
+  font-size: 25px;
+}
+
+.contact {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 15px;
+}
+.heroImg {
+  border-radius: 50%;
+  width: 60%;
+  animation-name: animateHero;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes animateHero {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -25px);
+  }
+  100% {
+    transform: transform(0, 0px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroImg {
+    width: 50%;
+  }
+}

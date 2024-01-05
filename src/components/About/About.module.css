@@ -1,0 +1,58 @@
+@import "../../vars.css";
+.title {
+  color: var(--color-primary);
+}
+.description {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  text-align: justify;
+}
+.pic {
+  width: 80%;
+  border-radius: 100px;
+
+  animation-name: about-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes about-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.cardTitle,
+.cardDesc {
+  font-family: var(--font-roboto);
+}
+
+li {
+  list-style-type: none;
+  color: var(--color-primary);
+  font-weight: 300;
+
+  animation-name: about-skill;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.badge {
+  background-color: var(--color-primary);
+}
+/* @keyframes about-skill {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+} */

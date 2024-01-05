@@ -1,0 +1,83 @@
+@import "../../vars.css";
+/* .navContainer {
+  position: sticky;
+  z-index: 2;
+  background-color: var(--color-bg);
+} */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin: 0 10%;
+}
+.name {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.name:hover {
+  color: var(--color-primary);
+}
+/* .menu {
+  display: flex;
+} */
+.menubtn {
+  display: none;
+}
+.ulist {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.ulist a {
+  font-size: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.ulist a:hover {
+  color: var(--color-primary);
+  border-bottom: 2px solid;
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0%;
+    /* margin-right: 10%; */
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+  }
+
+  .menubtn {
+    display: block;
+  }
+  .ulist {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background-color: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.menuOpen {
+  display: flex;
+}
