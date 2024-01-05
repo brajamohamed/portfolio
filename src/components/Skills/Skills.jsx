@@ -6,8 +6,8 @@ const Skills = () => {
   return (
     <div className="container">
       <h1 className={`text-center mb-5 ${style.title}`}>Skills</h1>
-      <div className="row d-flex justify-content-center">
-        <div className="card mb-3 col-lg-4">
+      <div className="row d-flex justify-content-center gap-3">
+        <div className="card mb-3 col-lg-3">
           <h4 className={`card-title mt-3 text-center ${style.cardTitle}`}>
             Front End Development
           </h4>
@@ -28,7 +28,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card mb-3 col-lg-4">
+        <div className="card mb-3 col-lg-3">
           <h4 className={`card-title mt-3 text-center ${style.cardTitle}`}>
             Back End Development
           </h4>
@@ -45,7 +45,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card mb-3 col-lg-4">
+        <div className="card mb-3 col-lg-3">
           <h4 className={`card-title mt-3 text-center ${style.cardTitle}`}>
             Database
           </h4>
