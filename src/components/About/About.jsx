@@ -4,8 +4,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className={`container vh-100 ${style.container}`}>
-      <h1 className={`text-center mb-5 ${style.title}`}>About Me</h1>
+    <div
+      className={`container d-flex flex-column justify-content-center align-items-center gap-5 ${style.container}`}
+      id="aboutSection"
+    >
+      <h1 className={`${style.title}`}>About Me</h1>
       <div className={`row ${style.row}`}>
         <div className="col-lg-6  d-none d-lg-flex justify-content-start align-items-center mb-3">
           <img src={profilePic} alt="about me pic" className={style.pic} />

@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className={style.menu}>
           <img
             src={open ? closeicon : menuiconwhite}
-            alt="menu icon "
+            alt="nav icon "
             className={style.menubtn}
             onClick={() => setOpen(!open)}
           />
@@ -24,19 +24,19 @@ const Navbar = () => {
             onClick={() => setOpen(false)}
           >
             <li>
-              <a href="#Home">Home</a>
+              <a href="#heroSection">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#aboutSection">About</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skillSection">Skills</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projectSection">Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#newSkillSection">Contact</a>
             </li>
           </ul>
         </div>

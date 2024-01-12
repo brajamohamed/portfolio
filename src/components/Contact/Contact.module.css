@@ -1,6 +1,18 @@
+@import "../../vars.css";
 .container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 2.5em;
+}
+.skill {
+  border-radius: 50%;
+  background-color: var(--color-text);
+}
+.logo {
+  width: 80px;
+  height: 80px;
 }

@@ -1,9 +1,10 @@
 @import "../../vars.css";
-/* .navContainer {
-  position: sticky;
+.navContainer {
+  position: fixed;
+  width: 100%;
   z-index: 2;
   background-color: var(--color-bg);
-} */
+}
 .navbar {
   position: relative;
   display: flex;
@@ -21,11 +22,10 @@
 .name:hover {
   color: var(--color-primary);
 }
-/* .menu {
-  display: flex;
-} */
+
 .menubtn {
   display: none;
+  position: relative;
 }
 .ulist {
   display: flex;
@@ -59,7 +59,9 @@
   }
 
   .menubtn {
-    display: block;
+    display: flex;
+    position: relative;
+    /* right: 0; */
   }
   .ulist {
     display: none;
@@ -77,7 +79,6 @@
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   }
 }
-
 .menuOpen {
   display: flex;
 }

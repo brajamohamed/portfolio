@@ -1,0 +1,61 @@
+@import "../../vars.css";
+
+.container {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  background-color: var(--color-primary);
+  border-radius: 35%;
+  transition: all ease;
+}
+.img {
+  width: 25px;
+  transition: all ease 0.1s;
+}
+.container:hover .img {
+  animation-name: downloader;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.container:active .img {
+  animation-name: downloaded;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 3s;
+}
+@keyframes downloader {
+  0% {
+    transform: scale(1.5) translate(0, 0px);
+  }
+  25% {
+    transform: scale(1.5) translate(0, 5px);
+  }
+  50% {
+    transform: scale(1.5) translate(0, 0px);
+  }
+  75% {
+    transform: scale(1.5) translate(0, 3px);
+  }
+  100% {
+    transform: scale(1.5) translate(0, 0px);
+  }
+}
+
+@keyframes downloaded {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.resume {
+  font-size: 15px;
+}
