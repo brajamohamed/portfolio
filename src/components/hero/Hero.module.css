@@ -22,7 +22,7 @@
   padding: 15px;
 }
 .heroImg {
-  border-radius: 50%;
+  border-radius: 34% 64% 77% 26%/73% 54% 45% 19%;
   width: 60%;
   animation-name: animateHero;
   animation-duration: 3s;
